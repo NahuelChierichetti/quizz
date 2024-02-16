@@ -1,0 +1,25 @@
+@font-face {
+    font-family: 'Brandon Bold';
+    src: url('./assets/fonts/Brandon/BrandonGrotesque-Bold.woff2') format('woff2'),
+         url('./assets/fonts/Brandon/BrandonGrotesque-Bold.woff') format('woff');
+  }
+  
+  @font-face {
+    font-family: 'Brandon Medium';
+    src: url('./assets/fonts/Brandon/BrandonGrotesque-Medium.woff2') format('woff2'),
+         url('./assets/fonts/Brandon/BrandonGrotesque-Medium.woff') format('woff');
+  }
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Brandon Bold', sans-serif;
+}
+
+p{
+    font-family: 'Brandon Medium', sans-serif;
+}
+
+.bg-weare {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}

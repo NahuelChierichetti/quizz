@@ -1,0 +1,46 @@
+.container-principal {
+    display: flex;
+}
+
+.bg-weare{
+    width: 40vw;
+    background-image: url(../../assets/img/bg-astronauta.png);
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.box-quizz{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    padding: 100px;
+    background-color: #09141f;
+    width: 60vw;
+    height: 100vh;
+    color: #fff;
+}
+
+.container-btnCategorias {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-btnCategorias button {
+    margin-top: 50px;
+    background: transparent;
+    padding: 15px 60px;
+    font-size: 1.4em;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 20px;
+    border: 2px solid #fff;
+    transition: .3s ease-in-out;
+}
+
+.container-btnCategorias button:hover {
+    background-color: #F34D23;
+    border: 2px solid #F34D23;
+    transition: .3s ease-in-out;
+}
