@@ -1,7 +1,6 @@
 .container-quizz {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     height: 100%;
 }
 
@@ -50,4 +49,46 @@ li.btn-opcion label {
 input.opcion-pregunta {
     height: 0px;
     width: 0px;
+}
+
+.opciones-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.opciones-container button {
+    border: 1px solid #fff !important;
+    padding: 20px !important;
+    margin: 10px 0px;
+    border-radius: 10px;
+    transition: .3s ease-in-out;
+}
+
+.opciones-container button:hover {
+    background: #F34D23;
+    border-color: #F34D23 !important;
+    transition: .3s ease-in-out;
+}
+
+.opciones-container button.seleccionado {
+    background: red;
+}
+
+p.quizzComplete {
+    font-size: 26px;
+}
+
+.feedback h2 {
+    width: 15%;
+    text-align: center;
+    padding: 8px 0px;
+    border-radius: 10px;
+    margin: 30px 0px;
+    border: 1px solid #F34D23;
+    color: #F34D23;
+}
+
+.feedback-list p {
+    font-size: 18px;
+    margin: 15px 0px;
 }

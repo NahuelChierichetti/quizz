@@ -3,7 +3,7 @@
 }
 
 .bg-weare{
-    width: 40vw;
+    width: 45vw;
     background-image: url(../../assets/img/bg-astronauta.png);
     background-position: right;
     background-size: cover;
@@ -17,7 +17,7 @@
     margin: auto;
     padding: 100px;
     background-color: #09141f;
-    width: 60vw;
+    width: 55vw;
     height: 100vh;
     color: #fff;
 }
@@ -33,9 +33,9 @@
     padding: 15px 60px;
     font-size: 1.4em;
     text-transform: uppercase;
-    font-weight: 600;
-    border-radius: 20px;
-    border: 2px solid #fff;
+    font-weight: 400;
+    border-radius: 10px;
+    border: 1px solid #fff;
     transition: .3s ease-in-out;
 }
 

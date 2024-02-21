@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import preguntasElectro from '../../data/electro.json';
+import preguntasElectro from '../../data/electro';
 import './Electro.css';
 
 function Electro() {
@@ -10,6 +10,13 @@ function Electro() {
     const [feedback, setFeedback] = useState("");
     const [feedbackTier, setFeedbackTier] = useState("");
     const [mostrarFormulario, setMostrarFormulario] = useState(true);
+    const [imagenFondo, setImagenFondo] = useState(preguntasElectro.preguntas[0].imagen);
+
+
+    useEffect(() => {
+        // Actualizar la imagen de fondo en función de la pregunta actual
+        setImagenFondo(preguntasElectro.preguntas[preguntaActual].imagen);
+    }, [preguntaActual]);
 
     useEffect(() => {
         if (preguntaActual >= 3) {
@@ -255,10 +262,19 @@ function Electro() {
             }
 
             // Almacenar el mensaje de feedback del TIER y el puntaje total
-            setFeedbackTier(`Tu TIER es: ${tier}`);
+            setFeedbackTier(`TIER ${tier}`);
 
-            // Combina los feedbacks para mostrar al usuario
-            const feedbackFinal = `${feedbackplataformaEcommerce} | ${feedbackInversion} | ${feedbackCanalesPublicidad} | ${feedbackPlataformaEmailMarketing} | ${feedbackLogistica} | ${feedbackOmnicanalidad} | ${feedbackCanalesComunicacion}`;
+            const feedbackFinal = (
+                <div className="feedback-list">
+                    <p>• {feedbackplataformaEcommerce}</p>
+                    <p>• {feedbackInversion}</p>
+                    <p>• {feedbackCanalesPublicidad}</p>
+                    <p>• {feedbackPlataformaEmailMarketing}</p>
+                    <p>• {feedbackLogistica}</p>
+                    <p>• {feedbackOmnicanalidad}</p>
+                    <p>• {feedbackCanalesComunicacion}</p>
+                </div>
+            );
             setFeedback(feedbackFinal);
 
             // Ocultar el formulario luego de mostrar el feedback
@@ -268,7 +284,7 @@ function Electro() {
 
     return (
         <div className='container-principal'>
-            <div className='bg-weare'></div>
+            <div className='bg-weare' style={{backgroundImage: `url(${imagenFondo})`}}></div>
             <div className='box-quizz'>
                 <div className="container-quizz">
                     <p className="etiqueta-quizz">Electro</p>
@@ -277,35 +293,26 @@ function Electro() {
                             <div>
                                 <p className="numero-pregunta">{preguntaActual + 1}/{preguntasElectro.preguntas.length}</p>
                                 <p className='titulo-pregunta'>{preguntasElectro.preguntas[preguntaActual].pregunta}</p>
-                                <ul>
+                                <div className="opciones-container">
                                     {preguntasElectro.preguntas[preguntaActual].respuestas.map((respuesta, index) => (
-                                        <li key={index} className='btn-opcion'>
-                                            <label>
-                                                <input
-                                                    className='opcion-pregunta'
-                                                    type="radio"
-                                                    name={`pregunta${preguntaActual}`}
-                                                    value={respuesta.valor}
-                                                    onChange={() => handleRespuesta(respuesta.valor)}
-                                                    checked={respuestasUsuario[preguntaActual] === respuesta.valor}
-                                                />
-                                                {respuesta.texto}
-                                            </label>
-                                        </li>
+                                        <button
+                                            key={index}
+                                            className={`btn-opcion ${respuestasUsuario[preguntaActual] === respuesta.valor ? 'seleccionado' : ''}`}
+                                            onClick={() => handleRespuesta(respuesta.valor)}
+                                        >
+                                            {respuesta.texto}
+                                        </button>
                                     ))}
-                                </ul>
+                                </div>
                             </div>
-                            {preguntaActual === preguntasElectro.preguntas.length - 1 && (
-                                <button type="submit" className='btn-send'>Enviar respuestas</button>
-                            )}
                         </form>
                     ) : (
                         <div>
-                            <p>¡Cuestionario completado!</p>
+                            <p className='quizzComplete'>¡Cuestionario completado!</p>
                         </div>
                     )}
                     {feedback && (
-                        <div>
+                        <div className='feedback'>
                             <h2>{feedbackTier}</h2>
                             <p>{feedback}</p>
                         </div>
