@@ -266,13 +266,39 @@ function Electro() {
 
             const feedbackFinal = (
                 <div className="feedback-list">
-                    <p>• {feedbackplataformaEcommerce}</p>
-                    <p>• {feedbackInversion}</p>
-                    <p>• {feedbackCanalesPublicidad}</p>
-                    <p>• {feedbackPlataformaEmailMarketing}</p>
-                    <p>• {feedbackLogistica}</p>
-                    <p>• {feedbackOmnicanalidad}</p>
-                    <p>• {feedbackCanalesComunicacion}</p>
+                    <div className='respuestaPlataformaEcommerce'>
+                        <h4>¿Cuantas ordenes mensuales reciben?</h4>
+                        <p>Tu respuesta: {plataformaEcommerce}</p>
+                        <p>• {feedbackplataformaEcommerce}</p>
+                    </div>
+                    <div className='respuestaInversion'>
+                        <h4>¿Cuantos años de eCommerce tienen?</h4>
+                        <p>Tu respuesta: {inversion}</p>
+                        <p>• {feedbackInversion}</p>
+                    </div>
+                    <div className='respuestaCanalesPublicidad'>
+                        <h4>¿Cuantos locales tienen?</h4>
+                        <p>Tu respuesta: {canalesPublicidad}</p>
+                        <p>• {feedbackCanalesPublicidad}</p>
+                    </div>
+                    <div className='respuestaPlataformaEmailMarketing'>
+                        <h4>¿Qué plataforma utilizas para vender?</h4>
+                        <p>Tu respuesta: {plataformaEmailMarketing}</p>
+                        <p>• {feedbackPlataformaEmailMarketing}</p>
+                    </div>
+                    <div className='respuestaLogistica'>
+                        <h4>¿Cuál es tu % de inversión?</h4>
+                        <p>Tu respuesta: {logistica}</p>
+                        <p>• {feedbackLogistica}</p>
+                    </div>
+                    <div className='respuestaOmnicanalidad'>
+                        <p>• {feedbackOmnicanalidad} Tu respuesta: {omnicanalidad}</p>
+                        <p>• {feedbackOmnicanalidad}</p>
+                    </div>
+                    <div className='respuestaCanalesComunicacion'>
+                        <p>• {feedbackCanalesComunicacion} Tu respuesta: {canalesComunicacion}</p>
+                        <p>• {feedbackCanalesComunicacion}</p>
+                    </div>
                 </div>
             );
             setFeedback(feedbackFinal);

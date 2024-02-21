@@ -1,10 +1,8 @@
-
-export const preguntasElectro = [
     {
         "preguntas": [
             {
                 "pregunta": "¿Cuantas ordenes mensuales reciben?",
-                "imagen": "./../assets/img/astronauta-ordenes.jpg",
+                "imagen": "src/assets/img/astronauta-ordenes.jpg",
                 "respuestas": [
                     {
                         "texto": "0 a 200",
@@ -26,7 +24,7 @@ export const preguntasElectro = [
             },
             {
                 "pregunta": "¿Cuantos años de eCommerce tienen?",
-                "imagen": "../assets/img/astronauta-ecommerce.jpg",
+                "imagen": "src/assets/img/astronauta-ecommerce.jpg",
                 "respuestas": [
                     {
                         "texto": "1 a 2",
@@ -48,7 +46,7 @@ export const preguntasElectro = [
             },
             {
                 "pregunta": "¿Cuantos locales tienen?",
-                "imagen": "../assets/img/astronauta-ecommerce-1.jpg",
+                "imagen": "src/assets/img/astronauta-ecommerce-1.jpg",
                 "respuestas": [
                     {
                         "texto": "0 a 5",
@@ -70,7 +68,7 @@ export const preguntasElectro = [
             },
             {
                 "pregunta": "¿Qué plataforma utilizas para vender?",
-                "imagen": "../assets/img/astronauta-ecommerce-2.jpg",
+                "imagen": "src/assets/img/astronauta-ecommerce-2.jpg",
                 "respuestas": [
                     {
                         "texto": "Tiendanube / Mercado Shops",
@@ -92,7 +90,7 @@ export const preguntasElectro = [
             },
             {
                 "pregunta": "¿Cuál es tu % de inversión?",
-                "imagen": "../assets/img/astronauta-ecommerce-3.jpg",
+                "imagen": "src/assets/img/astronauta-ecommerce-3.jpg",
                 "respuestas": [
                     {
                         "texto": "10% a 15%",
@@ -114,7 +112,7 @@ export const preguntasElectro = [
             },
             {
                 "pregunta": "¿Qué canales de publicidad utilizas?",
-                "imagen": "../assets/img/hot-sale.jpg",
+                "imagen": "src/assets/img/hot-sale.jpg",
                 "respuestas": [
                     {
                         "texto": "Meta / Google",
@@ -136,7 +134,7 @@ export const preguntasElectro = [
             },
             {
                 "pregunta": "¿Qué plataforma de Email Marketing utilizas?",
-                "imagen": "../assets/img/astronauta-ordenes.jpg",
+                "imagen": "src/assets/img/astronauta-ordenes.jpg",
                 "respuestas": [
                     {
                         "texto": "Mailchimp / Perfit",
@@ -158,7 +156,7 @@ export const preguntasElectro = [
             },
             {
                 "pregunta": "¿Cuál es la logística que implementas?",
-                "imagen": "../assets/img/astronauta-ordenes.jpg",
+                "imagen": "src/assets/img/astronauta-ecommerce-1.jpg",
                 "respuestas": [
                     {
                         "texto": "Entrega a domicilio / Puntos de tercero",
@@ -180,7 +178,7 @@ export const preguntasElectro = [
             },
             {
                 "pregunta": "Omicanalidad",
-                "imagen": "../assets/img/astronauta-ordenes.jpg",
+                "imagen": "src/assets/img/astronauta-ecommerce.jpg",
                 "respuestas": [
                     {
                         "texto": "n/a",
@@ -202,7 +200,7 @@ export const preguntasElectro = [
             },
             {
                 "pregunta": "¿Qué canales de comunicación utilizas?",
-                "imagen": "../assets/img/astronauta-ecommerce-2.jpg",
+                "imagen": "src/assets/img/astronauta-ecommerce-2.jpg",
                 "respuestas": [
                     {
                         "texto": "WhatsApp / Instagram / Mail",
@@ -224,6 +222,5 @@ export const preguntasElectro = [
             }
         ]
       }
-]
 
   

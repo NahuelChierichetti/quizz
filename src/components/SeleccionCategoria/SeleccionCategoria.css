@@ -18,7 +18,7 @@
     padding: 100px;
     background-color: #09141f;
     width: 55vw;
-    height: 100vh;
+    min-height: 100vh;
     color: #fff;
 }
 
