@@ -302,11 +302,6 @@ function Electro() {
                         <p>Tu respuesta: {canalesComunicacion}</p>
                         <p>{feedbackCanalesComunicacion}</p>
                     </div>
-                    <div className='containerRespuesta respuestaCanalesComunicacion'>
-                        <h4 className='title-respuesta'>¿Qué canales de comunicación utilizas?</h4>
-                        <p>Tu respuesta: {canalesComunicacion}</p>
-                        <p>{feedbackCanalesComunicacion}</p>
-                    </div>
                 </div>
             );
             setFeedback(feedbackFinal);
