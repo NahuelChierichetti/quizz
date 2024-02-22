@@ -92,3 +92,23 @@ p.quizzComplete {
     font-size: 18px;
     margin: 15px 0px;
 }
+
+.box-quizz-completed {
+    width: 100vw;
+}
+
+.bg-weare-hidden {
+    display: none;
+}
+
+.containerRespuesta {
+    border: 1px solid;
+    padding: 40px;
+    border-radius: 10px;
+    margin: 20px 0px;
+}
+
+h4.title-respuesta {
+    font-size: 32px;
+    color: #F34D23;
+}

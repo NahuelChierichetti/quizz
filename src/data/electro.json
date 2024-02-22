@@ -1,7 +1,7 @@
     {
         "preguntas": [
             {
-                "pregunta": "¿Cuantas ordenes mensuales reciben?",
+                "pregunta": "¿Cuántas ordenes mensuales reciben?",
                 "imagen": "src/assets/img/astronauta-ordenes.jpg",
                 "respuestas": [
                     {
@@ -23,7 +23,7 @@
                 ]
             },
             {
-                "pregunta": "¿Cuantos años de eCommerce tienen?",
+                "pregunta": "¿Cuántos años de eCommerce tienen?",
                 "imagen": "src/assets/img/astronauta-ecommerce.jpg",
                 "respuestas": [
                     {
@@ -45,7 +45,7 @@
                 ]
             },
             {
-                "pregunta": "¿Cuantos locales tienen?",
+                "pregunta": "¿Cuántos locales tienen?",
                 "imagen": "src/assets/img/astronauta-ecommerce-1.jpg",
                 "respuestas": [
                     {
@@ -156,7 +156,7 @@
             },
             {
                 "pregunta": "¿Cuál es la logística que implementas?",
-                "imagen": "src/assets/img/astronauta-ecommerce-1.jpg",
+                "imagen": "src/assets/img/astronauta-logistica.jpg",
                 "respuestas": [
                     {
                         "texto": "Entrega a domicilio / Puntos de tercero",

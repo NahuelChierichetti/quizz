@@ -11,7 +11,7 @@ function Electro() {
     const [feedbackTier, setFeedbackTier] = useState("");
     const [mostrarFormulario, setMostrarFormulario] = useState(true);
     const [imagenFondo, setImagenFondo] = useState(preguntasElectro.preguntas[0].imagen);
-
+    const [plataformaEcommerceFeedbackStyle, setPlataformaEcommerceFeedbackStyle] = useState('');
 
     useEffect(() => {
         // Actualizar la imagen de fondo en función de la pregunta actual
@@ -266,38 +266,41 @@ function Electro() {
 
             const feedbackFinal = (
                 <div className="feedback-list">
-                    <div className='respuestaPlataformaEcommerce'>
-                        <h4>¿Cuantas ordenes mensuales reciben?</h4>
+                    <p className='description-feedback'>A continuación vamos a ver tus respuestas y te vamos a sugerir dependiendo a tu TIERN</p>
+                    <div className='containerRespuesta respuestaPlataformaEcommerce'>
+                        <h4 className='title-respuesta'>¿Qué plataforma utilizas para vender?</h4>
                         <p>Tu respuesta: {plataformaEcommerce}</p>
-                        <p>• {feedbackplataformaEcommerce}</p>
+                        <p>{feedbackplataformaEcommerce}</p>
                     </div>
-                    <div className='respuestaInversion'>
-                        <h4>¿Cuantos años de eCommerce tienen?</h4>
+                    <div className='containerRespuesta respuestaInversion'>
+                        <h4 className='title-respuesta'>¿Cuál es tu % de inversión?</h4>
                         <p>Tu respuesta: {inversion}</p>
-                        <p>• {feedbackInversion}</p>
+                        <p>{feedbackInversion}</p>
                     </div>
-                    <div className='respuestaCanalesPublicidad'>
-                        <h4>¿Cuantos locales tienen?</h4>
+                    <div className='containerRespuesta respuestaCanalesPublicidad'>
+                        <h4 className='title-respuesta'>¿Qué canales de publicidad utilizas?</h4>
                         <p>Tu respuesta: {canalesPublicidad}</p>
-                        <p>• {feedbackCanalesPublicidad}</p>
+                        <p>{feedbackCanalesPublicidad}</p>
                     </div>
-                    <div className='respuestaPlataformaEmailMarketing'>
-                        <h4>¿Qué plataforma utilizas para vender?</h4>
+                    <div className='containerRespuesta respuestaPlataformaEmailMarketing'>
+                        <h4 className='title-respuesta'>¿Qué plataforma de Email Marketing utilizas?</h4>
                         <p>Tu respuesta: {plataformaEmailMarketing}</p>
-                        <p>• {feedbackPlataformaEmailMarketing}</p>
+                        <p>{feedbackPlataformaEmailMarketing}</p>
                     </div>
-                    <div className='respuestaLogistica'>
-                        <h4>¿Cuál es tu % de inversión?</h4>
+                    <div className='containerRespuesta respuestaLogistica'>
+                        <h4 className='title-respuesta'>¿Cuál es la logística que implementas?</h4>
                         <p>Tu respuesta: {logistica}</p>
-                        <p>• {feedbackLogistica}</p>
+                        <p>{feedbackLogistica}</p>
                     </div>
-                    <div className='respuestaOmnicanalidad'>
-                        <p>• {feedbackOmnicanalidad} Tu respuesta: {omnicanalidad}</p>
-                        <p>• {feedbackOmnicanalidad}</p>
+                    <div className='containerRespuesta respuestaOmnicanalidad'>
+                        <h4 className='title-respuesta'>Omnicanalidad</h4>
+                        <p>Tu respuesta: {omnicanalidad}</p>
+                        <p>{feedbackOmnicanalidad}</p>
                     </div>
-                    <div className='respuestaCanalesComunicacion'>
-                        <p>• {feedbackCanalesComunicacion} Tu respuesta: {canalesComunicacion}</p>
-                        <p>• {feedbackCanalesComunicacion}</p>
+                    <div className='containerRespuesta respuestaCanalesComunicacion'>
+                        <h4 className='title-respuesta'>¿Qué canales de comunicación utilizas?</h4>
+                        <p>Tu respuesta: {canalesComunicacion}</p>
+                        <p>{feedbackCanalesComunicacion}</p>
                     </div>
                 </div>
             );
@@ -310,8 +313,8 @@ function Electro() {
 
     return (
         <div className='container-principal'>
-            <div className='bg-weare' style={{backgroundImage: `url(${imagenFondo})`}}></div>
-            <div className='box-quizz'>
+            <div className={mostrarFormulario ? 'bg-weare' : 'bg-weare-hidden'} style={{display: mostrarFormulario ? 'block' : 'none', backgroundImage: `url(${imagenFondo})`}}></div>
+            <div className={`box-quizz ${!mostrarFormulario ? 'box-quizz-completed' : ''}`}>
                 <div className="container-quizz">
                     <p className="etiqueta-quizz">Electro</p>
                     {mostrarFormulario && preguntaActual < preguntasElectro.preguntas.length ? (
