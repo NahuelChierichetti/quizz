@@ -116,7 +116,7 @@ function Electro() {
                 }
 
                 if (omnicanalidad === "Kiosk In / Integrac. BD / Política de promociones / Integración de stock off - on"){
-                    feedbackOmnicanalidad = "¡Estás por buen camino"
+                    feedbackOmnicanalidad = "¡Estás por buen camino!"
                 } else {
                     feedbackOmnicanalidad = "Lo recomendable es Kiosk In / Integrac. BD / Política de promociones / Integración de stock off - on"
                 }
@@ -160,7 +160,7 @@ function Electro() {
                 }
 
                 if (omnicanalidad === "Integrac. BD / Integrac. stock"){
-                    feedbackOmnicanalidad = "¡Estás por buen camino"
+                    feedbackOmnicanalidad = "¡Estás por buen camino!"
                 } else {
                     feedbackOmnicanalidad = "Lo recomendable es Integrac. BD / Integrac. stock"
                 }
@@ -204,7 +204,7 @@ function Electro() {
                 }
 
                 if (omnicanalidad === "Integrac. BD"){
-                    feedbackOmnicanalidad = "¡Estás por buen camino"
+                    feedbackOmnicanalidad = "¡Estás por buen camino!"
                 } else {
                     feedbackOmnicanalidad = "Lo recomendable es Integrac. BD"
                 }
@@ -248,7 +248,7 @@ function Electro() {
                 }
 
                 if (omnicanalidad === "n/a"){
-                    feedbackOmnicanalidad = "¡Estás por buen camino"
+                    feedbackOmnicanalidad = "¡Estás por buen camino!"
                 } else {
                     feedbackOmnicanalidad = "Lo recomendable es n/a"
                 }

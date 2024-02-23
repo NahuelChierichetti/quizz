@@ -178,7 +178,7 @@
             },
             {
                 "pregunta": "Omicanalidad",
-                "imagen": "src/assets/img/astronauta-ecommerce.png",
+                "imagen": "assets/img/astronauta-ecommerce.png",
                 "respuestas": [
                     {
                         "texto": "n/a",
