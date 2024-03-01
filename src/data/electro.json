@@ -2,7 +2,7 @@
         "preguntas": [
             {
                 "pregunta": "¿Cuántas ordenes mensuales reciben?",
-                "imagen": "./../assets/img/astronauta-ordenes.png",
+                "imagen": "../assets/img/astronauta-ordenes.png",
                 "respuestas": [
                     {
                         "texto": "0 a 200",
@@ -200,7 +200,7 @@
             },
             {
                 "pregunta": "¿Qué canales de comunicación utilizas?",
-                "imagen": "./../assets/img/astronauta-ecommerce-2.png",
+                "imagen": "../assets/img/astronauta-ecommerce-2.png",
                 "respuestas": [
                     {
                         "texto": "WhatsApp / Instagram / Mail",
