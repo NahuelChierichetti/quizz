@@ -15,9 +15,7 @@ function Electro() {
 
     useEffect(() => {
         // Actualizar la imagen de fondo en función de la pregunta actual
-        if (preguntasElectro.preguntas[preguntaActual]?.imagen) {
-            setImagenFondo(require(preguntasElectro.preguntas[preguntaActual].imagen));
-        }
+        setImagenFondo(preguntasElectro.preguntas[preguntaActual].imagen);
     }, [preguntaActual]);
 
     useEffect(() => {
