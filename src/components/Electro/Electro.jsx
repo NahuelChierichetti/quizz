@@ -15,7 +15,9 @@ function Electro() {
 
     useEffect(() => {
         // Actualizar la imagen de fondo en función de la pregunta actual
-        setImagenFondo(preguntasElectro.preguntas[preguntaActual].imagen);
+        if (preguntasElectro.preguntas[preguntaActual]?.imagen) {
+            setImagenFondo(require(preguntasElectro.preguntas[preguntaActual].imagen));
+        }
     }, [preguntaActual]);
 
     useEffect(() => {
@@ -313,7 +315,7 @@ function Electro() {
 
     return (
         <div className='container-principal'>
-            <div className={mostrarFormulario ? 'bg-weare' : 'bg-weare-hidden'} style={{display: mostrarFormulario ? 'block' : 'none', backgroundImage: `url(${imagenFondo})`}}></div>
+            <div className={mostrarFormulario ? 'bg-weare' : 'bg-weare-hidden'} style={{ display: mostrarFormulario ? 'block' : 'none', backgroundImage: `url(${imagenFondo})` }}></div>
             <div className={`box-quizz ${!mostrarFormulario ? 'box-quizz-completed' : ''}`}>
                 <div className="container-quizz">
                     <p className="etiqueta-quizz">Electro</p>
