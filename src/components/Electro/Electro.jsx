@@ -266,7 +266,7 @@ function Electro() {
 
             const feedbackFinal = (
                 <div className="feedback-list">
-                    <p className='description-feedback'>A continuación vamos a ver tus respuestas y te vamos a sugerir dependiendo a tu TIERN</p>
+                    <p className='description-feedback'>A continuación vamos a ver tus respuestas y te vamos a sugerir dependiendo a tu TIER</p>
                     <div className='containerRespuesta respuestaPlataformaEcommerce'>
                         <h4 className='title-respuesta'>¿Qué plataforma utilizas para vender?</h4>
                         <p>Tu respuesta: {plataformaEcommerce}</p>
@@ -313,7 +313,6 @@ function Electro() {
 
     return (
         <div className='container-principal'>
-            <div className={mostrarFormulario ? 'bg-weare' : 'bg-weare-hidden'} style={{ display: mostrarFormulario ? 'block' : 'none', backgroundImage: `url(${imagenFondo})` }}></div>
             <div className={`box-quizz ${!mostrarFormulario ? 'box-quizz-completed' : ''}`}>
                 <div className="container-quizz">
                     <p className="etiqueta-quizz">Electro</p>
