@@ -1,26 +1,24 @@
 .container-principal {
     display: flex;
-}
-
-.bg-weare{
-    width: 45vw;
-    background-image: url(../../assets/img/bg-astronauta.png);
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(../../assets/img/bg-planeta.png);
     background-position: right;
     background-size: cover;
     background-repeat: no-repeat;
-    transition: .3s;
 }
+
 
 .box-quizz{
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: auto;
-    padding: 100px;
+    padding: 80px 50px;
     background-color: #09141f;
-    width: 55vw;
-    min-height: 100vh;
+    width: 50vw;
     color: #fff;
+    border-radius: 10px;
 }
 
 .container-btnCategorias {

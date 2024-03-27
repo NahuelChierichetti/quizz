@@ -9,7 +9,6 @@ function SeleccionCategoria({ onSelectCategoria }) {
   return (
     <>
     <div className='container-principal'>
-        <div className='bg-weare'></div>
         <div className='box-quizz'>
             <h2 className='text-4xl text-center'>SELECCIONÁ TU CATEGORÍA</h2>
             <div className='container-btnCategorias my-4'>
