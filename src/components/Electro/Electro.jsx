@@ -116,7 +116,7 @@ function Electro() {
                 }
 
                 if (omnicanalidad === "Kiosk In / Integrac. BD / Política de promociones / Integración de stock off - on"){
-                    feedbackOmnicanalidad = "¡Estás por buen camino"
+                    feedbackOmnicanalidad = "¡Estás por buen camino!"
                 } else {
                     feedbackOmnicanalidad = "Lo recomendable es Kiosk In / Integrac. BD / Política de promociones / Integración de stock off - on"
                 }
@@ -160,7 +160,7 @@ function Electro() {
                 }
 
                 if (omnicanalidad === "Integrac. BD / Integrac. stock"){
-                    feedbackOmnicanalidad = "¡Estás por buen camino"
+                    feedbackOmnicanalidad = "¡Estás por buen camino!"
                 } else {
                     feedbackOmnicanalidad = "Lo recomendable es Integrac. BD / Integrac. stock"
                 }
@@ -204,7 +204,7 @@ function Electro() {
                 }
 
                 if (omnicanalidad === "Integrac. BD"){
-                    feedbackOmnicanalidad = "¡Estás por buen camino"
+                    feedbackOmnicanalidad = "¡Estás por buen camino!"
                 } else {
                     feedbackOmnicanalidad = "Lo recomendable es Integrac. BD"
                 }
@@ -248,7 +248,7 @@ function Electro() {
                 }
 
                 if (omnicanalidad === "n/a"){
-                    feedbackOmnicanalidad = "¡Estás por buen camino"
+                    feedbackOmnicanalidad = "¡Estás por buen camino!"
                 } else {
                     feedbackOmnicanalidad = "Lo recomendable es n/a"
                 }
@@ -266,7 +266,7 @@ function Electro() {
 
             const feedbackFinal = (
                 <div className="feedback-list">
-                    <p className='description-feedback'>A continuación vamos a ver tus respuestas y te vamos a sugerir dependiendo a tu TIERN</p>
+                    <p className='description-feedback'>A continuación vamos a ver tus respuestas y te vamos a sugerir dependiendo a tu TIER</p>
                     <div className='containerRespuesta respuestaPlataformaEcommerce'>
                         <h4 className='title-respuesta'>¿Qué plataforma utilizas para vender?</h4>
                         <p>Tu respuesta: {plataformaEcommerce}</p>
@@ -313,7 +313,6 @@ function Electro() {
 
     return (
         <div className='container-principal'>
-            <div className={mostrarFormulario ? 'bg-weare' : 'bg-weare-hidden'} style={{display: mostrarFormulario ? 'block' : 'none', backgroundImage: `url(${imagenFondo})`}}></div>
             <div className={`box-quizz ${!mostrarFormulario ? 'box-quizz-completed' : ''}`}>
                 <div className="container-quizz">
                     <p className="etiqueta-quizz">Electro</p>
